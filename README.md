@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>مكتبة التعليم المجاني</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+body{
+    margin:0;
+    font-family: "Tahoma", sans-serif;
+    background:#f2f5f9;
+}
+
+/* navbar */
+nav{
+    background:#1e3552;
+    padding:15px 40px;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+nav ul li{
+    cursor:pointer;
+}
+
+/* hero */
+.hero{
+    background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
+    url('https://i.imgur.com/0Y9zD7C.jpg') center/cover;
+    color:#fff;
+    text-align:center;
+    padding:80px 20px;
+}
+.hero h1{font-size:40px;margin-bottom:10px;}
+.hero p{font-size:18px;margin-bottom:25px;}
+
+.hero .btns a{
+    padding:12px 22px;
+    border-radius:6px;
+    text-decoration:none;
+    color:#fff;
+    margin:0 5px;
+}
+.btn-orange{background:#ff8c1a;}
+.btn-blue{background:#2f80ed;}
+
+/* cards */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    padding:40px 60px;
+}
+.card{
+    background:#fff;
+    border-radius:10px;
+    box-shadow:0 5px 10px rgba(0,0,0,.1);
+    text-align:center;
+    padding:25px;
+}
+.card i{
+    font-size:50px;
+    color:#2f80ed;
+    margin-bottom:15px;
+}
+
+/* quiz section */
+.quiz{
+    background:#fff;
+    margin:0 60px 40px;
+    border-radius:10px;
+    padding:30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.quiz h2{margin-bottom:10px;}
+.quiz a{
+    background:#ff8c1a;
+    color:#fff;
+    padding:12px 25px;
+    border-radius:6px;
+    text-decoration:none;
+}
+
+/* footer */
+footer{
+    background:#1e3552;
+    color:#fff;
+    padding:30px 60px;
+}
+.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+footer ul{list-style:none;padding:0;}
+footer li{margin:8px 0;}
+footer .social i{
+    font-size:20px;
+    margin:0 8px;
+}
+.copy{
+    text-align:center;
+    margin-top:20px;
+    opacity:.7;
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li>تسجيل الدخول</li>
+        <li>الرئيسية</li>
+        <li>استعراض المواد</li>
+        <li>اتصل بنا</li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h1>مكتبة التعليم المجاني</h1>
+    <p>كل الكتب والملازم المطبوعة للطلبة والمعلمين</p>
+    <div class="btns">
+        <a href="#" class="btn-orange">تصفح الكتب المطبوعة</a>
+        <a href="#" class="btn-blue">اختبار نفسك</a>
+    </div>
+</section>
+
+<section class="cards">
+    <div class="card">
+        <i class="fa-solid fa-book"></i>
+        <h3>كتب أكاديمية</h3>
+    </div>
+    <div class="card">
+        <i class="fa-solid fa-helmet-safety"></i>
+        <h3>كتب مهنية</h3>
+    </div>
+    <div class="card">
+        <i class="fa-solid fa-circle-question"></i>
+        <h3>مساعدة في الحلول</h3>
+    </div>
+</section>
+
+<section class="quiz">
+    <div>
+        <h2>اختبر نفسك</h2>
+        <p>اختبر مستواك في المواد الدراسية واحضر نتيجتك في النهاية</p>
+    </div>
+    <a href="#">ابدأ الاختبار الآن</a>
+</section>
+
+<footer>
+    <div class="footer-grid">
+        <div>
+            <h3>اتصل بنا</h3>
+            <ul>
+                <li><i class="fa-solid fa-envelope"></i> info@example.com</li>
+                <li><i class="fa-solid fa-phone"></i> 123-456-7890</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>روابط سريعة</h3>
+            <ul>
+                <li>الكتب المطبوعة</li>
+                <li>اختبر نفسك</li>
+                <li>من نحن</li>
+            </ul>
+        </div>
+
+        <div class="social">
+            <h3>تابعنا</h3>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+    </div>
+
+    <div class="copy">
+        جميع الحقوق محفوظة © 2024 مكتبة التعليم المجاني
+    </div>
+</footer>
+
+</body>
+</html>
